@@ -17,7 +17,7 @@ extension Color {
     }
     
     static var mainGreen: Color {
-        return Color(hex: "#51AA6F")
+        return Color(hex: "#009639")
     }
     
     static var iconGrey: Color {
@@ -36,8 +36,8 @@ extension Color {
         return Color(hex: "#F2F2F7")
     }
         
-    static var chartGrey: Color {
-        return Color(hex: "#EFEFEF")
+    static var darkCyan: Color {
+        return Color(hex: "#1F9DC4")
     }
 }
 
