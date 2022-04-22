@@ -1,13 +1,12 @@
 import SwiftUI
 
 struct SplashView: View {
-    
     @State var isActive:Bool = false
     
     var body: some View {
         VStack {
             if self.isActive {
-                EssayWritingtView()
+                
             } else {
                 Image("wwdc22logo")
                     .renderingMode(.original)
