@@ -15,9 +15,13 @@ struct SplashView: View {
                     .frame(width: 300, height: 300)
                     
                 Text("Essay Writing!")
-                    .font(Font.largeTitle)
-                
-                //TODO: Add scripling or typing sound effect
+                    .font(.custom("Helvetica", size:40))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .padding()
+                    .cornerRadius(8)
             }
         }
         .onAppear {

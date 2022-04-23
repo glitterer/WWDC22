@@ -142,7 +142,7 @@ struct EssayStructure: View {
                                 .background(Color.gray.opacity(0.25))
                                 .cornerRadius(8)
                         }
-                        NavigationLink(destination: EssayExampleView()) {
+                        NavigationLink(destination: TipsView()) {
                             Text("Want to See More Tips?🤟")
                                 .font(.custom("Helvetica", size:25))
                                 .fontWeight(.bold)

@@ -2,8 +2,8 @@
 import SwiftUI
 
 extension Color {
-    static var backgroundGrey: Color {
-        return Color(hex: "#FBFBFB")
+    static var iconPurple: Color {
+        return Color(hex: "#7F5DD7")
     }
     
     static var lightGrey: Color {

@@ -15,10 +15,13 @@ struct EssayWritingtView: View {
     var body: some View {
         ZStack{
             VStack{
-                Text("[ TODO: Let's put a pencil character image here ]")
-                    .font(.title)
-                    .fontWeight(.heavy)
-                    .multilineTextAlignment(.center)
+                if count <= 4.0 {
+                Image("wwdc-character-ready")
+                    .renderingMode(.original)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 300, height: 300)
+                }
                 Text(finishedText ?? "") //if no finished string, insert count
                     .font(.title)
                     .fontWeight(.heavy)
@@ -29,6 +32,10 @@ struct EssayWritingtView: View {
                     Button("Press to Proceed"){
                         appState.hasOnboarded = true //change the state
                     }
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.iconPurple)
+                    .cornerRadius(8)
                 }
             }
             .onReceive(timer, perform: {_ in
