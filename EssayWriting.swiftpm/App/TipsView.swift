@@ -1,8 +1,43 @@
 import SwiftUI
 
+struct CheckboxStyle: ToggleStyle {
+ 
+    func makeBody(configuration: Self.Configuration) -> some View {
+ 
+        return HStack {
+ 
+            configuration.label
+ 
+            Image(systemName: configuration.isOn ? "checkmark.circle.fill" : "circle")
+                .resizable()
+                .frame(width: 35, height: 35)
+                .foregroundColor(configuration.isOn ? .blue : .gray)
+                .font(.system(size: 20, weight: .bold, design: .default))
+                .onTapGesture {
+                    configuration.isOn.toggle()
+                }
+        }
+ 
+    }
+}
+
 struct TipsView: View {
+    @State var checkcbox = true
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HStack{
+                Toggle(isOn: $checkcbox, label: {
+                })
+                .padding()
+                .toggleStyle(CheckboxStyle())
+                Text("Fin")
+                    .font(.custom("Helvetica", size:25))
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.leading)
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
     }
 }
 

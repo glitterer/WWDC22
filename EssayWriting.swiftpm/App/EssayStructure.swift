@@ -26,7 +26,7 @@ struct EssayStructure: View {
                             .frame(width: 300, height: 300)
                         
                         VStack{
-                            Text("When it comes to writing an essay for an academic purpose, the most basic structure is the **'Five-Paragraph Essay'**.\n\nWhile some may find this to be a simple process, others may find this difficult in understanding and building strong fundamentals. Whatever the case might be, the important fact is that knowing the **five-paragraph essay** is an important process in the beginning of writing.\n\nThe Body consists of three basic parts: **introduction, body,** and **conclusion**.\nTo learn deeply on each parts, select the part you are interested in from below!")
+                            Text("When it comes to writing an essay for an academic purpose, the most basic structure is the **'Five-Paragraph Essay'**.\n\nWhile some may find this to be a simple process, others may find this difficult in understanding and building strong fundamentals. Whatever the case might be, the important fact is that knowing the **five-paragraph essay** is an important process in the beginning of writing.\n\nA five-paragraph essay consists of three basic parts: **introduction, body,** and **conclusion**.\nTo learn deeply on each parts, select the part you are interested in from below!")
                                 .font(.custom("Helvetica", size:25))
                                 .foregroundColor(.black)
                                 .multilineTextAlignment(.leading)
