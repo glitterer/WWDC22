@@ -13,7 +13,7 @@ struct SplashView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 300, height: 300)
-                    
+                
                 Text("Essay Writing!")
                     .font(.custom("Helvetica", size:40))
                     .fontWeight(.bold)

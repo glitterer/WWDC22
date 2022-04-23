@@ -16,7 +16,6 @@ struct EssayStructure: View {
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: .infinity, alignment: .center)
                         .padding()
-                    //.background(Color.gray.opacity(0.25))
                         .cornerRadius(8)
                     HStack{
                         Image("wwdc-character-fiveP")
@@ -48,7 +47,6 @@ struct EssayStructure: View {
                                     .multilineTextAlignment(.center)
                                     .frame(maxWidth: .infinity, alignment: .center)
                                     .padding()
-                                //.background(Color.gray.opacity(0.25))
                                     .cornerRadius(8)
                                 
                                 RoundedRectangle(cornerRadius: 25)
@@ -68,7 +66,6 @@ struct EssayStructure: View {
                                     .multilineTextAlignment(.center)
                                     .frame(maxWidth: .infinity, alignment: .center)
                                     .padding()
-                                //.background(Color.gray.opacity(0.25))
                                     .cornerRadius(8)
                                 
                                 RoundedRectangle(cornerRadius: 25)
@@ -88,7 +85,6 @@ struct EssayStructure: View {
                                     .multilineTextAlignment(.center)
                                     .frame(maxWidth: .infinity, alignment: .center)
                                     .padding()
-                                //.background(Color.gray.opacity(0.25))
                                     .cornerRadius(8)
                                 
                                 RoundedRectangle(cornerRadius: 25)
@@ -108,7 +104,6 @@ struct EssayStructure: View {
                                     .multilineTextAlignment(.center)
                                     .frame(maxWidth: .infinity, alignment: .center)
                                     .padding()
-                                //.background(Color.gray.opacity(0.25))
                                     .cornerRadius(8)
                                 
                                 RoundedRectangle(cornerRadius: 25)
@@ -128,7 +123,6 @@ struct EssayStructure: View {
                                     .multilineTextAlignment(.center)
                                     .frame(maxWidth: .infinity, alignment: .center)
                                     .padding()
-                                //.background(Color.gray.opacity(0.25))
                                     .cornerRadius(8)
                                 
                                 RoundedRectangle(cornerRadius: 25)
@@ -140,7 +134,7 @@ struct EssayStructure: View {
                             }
                         }
                         NavigationLink(destination: EssayExampleView()) {
-                            Text("Finished Studying? \nNow Let's See the Whole Sample Essay! 📄")
+                            Text("Finished Studying? \nNow Let's See the Whole Sample Essay! 📝👀")
                                 .font(.custom("Helvetica", size:25))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.blue)
@@ -162,7 +156,7 @@ struct EssayStructure: View {
                                 .cornerRadius(8)
                         }
                         NavigationLink(destination: Congratulations()) {
-                            Text("🌟Completed Writing an Essay?🌟")
+                            Text("🌟Completed All of the Above? \nCompleted Writing an Essay?🌟")
                                 .font(.custom("Helvetica", size:25))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.blue)

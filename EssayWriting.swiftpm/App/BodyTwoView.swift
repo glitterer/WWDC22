@@ -14,7 +14,6 @@ struct BodyTwoView: View {
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: .infinity, alignment: .center)
                     .padding()
-                //.background(Color.gray.opacity(0.25))
                     .cornerRadius(8)
                 
                 RoundedRectangle(cornerRadius: 25)

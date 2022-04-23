@@ -144,7 +144,7 @@ struct TipChecklistView: View {
                     
                     //Body 2
                     Group{
-                        Text("2. Body 2 Paragraph")
+                        Text("3. Body 2 Paragraph")
                             .font(.custom("Helvetica", size:30))
                             .fontWeight(.bold)
                             .foregroundColor(Color.black)
@@ -189,7 +189,7 @@ struct TipChecklistView: View {
                     
                     //Body 3
                     Group{
-                        Text("3. Body 3 Paragraph")
+                        Text("4. Body 3 Paragraph")
                             .font(.custom("Helvetica", size:30))
                             .fontWeight(.bold)
                             .foregroundColor(Color.black)

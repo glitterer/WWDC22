@@ -1,26 +1,3 @@
-/*
- import SwiftUI
- 
- struct Congratulations: View {
- var body: some View {
- Text("Congratualations! \nYou are now able to write a Five Paragraph Essay! 👏👏👏 \n\nKeep up the Good Work~🙋‍♂️")
- .font(.custom("Helvetica", size:40))
- .fontWeight(.bold)
- .foregroundColor(Color.black)
- .multilineTextAlignment(.center)
- .frame(maxWidth: .infinity, alignment: .center)
- .padding()
- .cornerRadius(8)
- }
- }
- 
- struct Congratulations_Previews: PreviewProvider {
- static var previews: some View {
- Congratulations()
- }
- }
- */
-
 import SwiftUI
 
 struct Congratulations: View {
@@ -49,7 +26,7 @@ struct Congratulations: View {
                              textSize: textSize,
                              startTime: 0.5)
             .padding(.top,50)
-            BlinkingWithBlur(text: "🙋‍♂️🙋‍♂️🙋‍♂️",
+            BlinkingWithBlur(text: "🙋‍♂️🙋‍♀️🙋",
                              fontName: "Didot",
                              textSize: textSize,
                              startTime: 0.6)

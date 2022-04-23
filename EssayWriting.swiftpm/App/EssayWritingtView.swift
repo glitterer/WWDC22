@@ -60,7 +60,7 @@ struct EssayWritingtView: View {
             })
             .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3){
-                    withAnimation(.spring()){  //.linear(duration: 2)
+                    withAnimation(.spring()){ 
                         startAnimation.toggle()
                     }
                 }
