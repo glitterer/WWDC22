@@ -151,7 +151,18 @@ struct EssayStructure: View {
                                 .cornerRadius(8)
                         }
                         NavigationLink(destination: TipChecklistView()) {
-                            Text("A Tip-Checklist to Help You with Your Essay! 🤟")
+                            Text("📌A Tip-Checklist to Help You with Your Essay! 🤟")
+                                .font(.custom("Helvetica", size:25))
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.blue)
+                                .multilineTextAlignment(.center)
+                                .frame(maxWidth: .infinity, alignment: .center)
+                                .padding()
+                                .background(Color.gray.opacity(0.25))
+                                .cornerRadius(8)
+                        }
+                        NavigationLink(destination: Congratulations()) {
+                            Text("🌟Completed Writing an Essay?🌟")
                                 .font(.custom("Helvetica", size:25))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.blue)
