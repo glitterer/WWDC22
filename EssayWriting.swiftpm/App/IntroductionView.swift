@@ -57,7 +57,7 @@ struct IntroductionView: View {
                             .multilineTextAlignment(.leading)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding([.leading, .trailing])
-                        Text("Geronimo! You have now understood how to write an introductory paragraph!\n")
+                        Text("Geronimo! You have now understood how to write an **introductory paragraph!**\n")
                             .font(.custom("Helvetica", size:25))
                             .foregroundColor(Color.black)
                             .multilineTextAlignment(.leading)
@@ -69,7 +69,7 @@ struct IntroductionView: View {
             }
             VStack{
                 Spacer()
-                Button("Click here to look at an example of an introductory statement!") {isHidden.toggle()}
+                Button("Click here to look at an example of an introductory paragraph!") {isHidden.toggle()}
                     .font(.custom("Helvetica", size:25))
                 RoundedRectangle(cornerRadius: 25)
                     .inset(by: 3)

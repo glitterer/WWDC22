@@ -13,7 +13,7 @@ struct BodyOneView: View {
     var body: some View {
         ZStack{
             VStack{
-                Text("Body1")
+                Text("Body 1")
                     .font(.custom("Helvetica", size:40))
                     .fontWeight(.bold)
                     .foregroundColor(Color.darkCyan)
@@ -32,31 +32,31 @@ struct BodyOneView: View {
                 
                 VStack{
                     VStack{
-                        Text("The first paragraph is like the advertisement of your whole essay. This is the part where you introduce your topic and catch the attention of the readers.  \nHere are some tips for you to structure you introductory paragraph.")
+                        Text("The second, third, and fourth paragraph are your body. This is where your main points and their detail (i.e supporting) sentences are written. From here there is an option on how you would want to prioritize your main ideas. \n**Option 1**: Put your most important main idea in body 1, and least important in body 3. \n**Option 2**: Put your least important idea at body 1, and most important at body 3.\nIf you are a beginner of writing an essay, it is recommended to take **Option 1** as it is keeps the reader interested at the start of the essay, rather than having the reader stop from the start. **Therefore, this app will be explaining from Option 1's point of view.** \nHere are some tips on writing a body 1 paragraph.")
                             .font(.custom("Helvetica", size:25))
                             .foregroundColor(Color.black)
                             .multilineTextAlignment(.leading)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding()
-                        Text("✔︎ Writing a **thesis statement**, is crucial! A thesis statement is the first ever statement that the readers will read. It contains your main idea and can have a kind of **hook** to catch the readers' attention. \n")
+                        Text("✔︎ Write a topic sentence that summarizes your point. It would be best to contain the keyword that you mentioned in your introductory paragraph.\n")
                             .font(.custom("Helvetica", size:25))
                             .foregroundColor(Color.black)
                             .multilineTextAlignment(.leading)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.horizontal)
-                        Text("✔︎ Describe what you mean about your thesis statement in **1~2 sentences** (i.e this becomes the **supporting sentences**). The supporting sentences can also give a background view on what you wish to talk about, or why you wish to talk about that specific topic. \n")
+                        Text("✔︎ Write 3 detail sentences using examples, citations, quotes, statistics, facts, etc.\n")
                             .font(.custom("Helvetica", size:25))
                             .foregroundColor(Color.black)
                             .multilineTextAlignment(.leading)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding([.leading, .trailing])
-                        Text("✔︎ The last sentence of the paragraph would be give a good connection to the body paragraphs. The tpyical method of this would to be **briefly talking about the body paragraphs through keywords.**\n")
+                        Text("✔︎ The last sentence should be able to connect to the next paragraph (i.e body 2)\n")
                             .font(.custom("Helvetica", size:25))
                             .foregroundColor(Color.black)
                             .multilineTextAlignment(.leading)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding([.leading, .trailing])
-                        Text("Geronimo! You have now understood how to write an introductory paragraph!\n")
+                        Text("Voilla! You have now understood how to write an **Body 1 paragraph!**\n")
                             .font(.custom("Helvetica", size:25))
                             .foregroundColor(Color.black)
                             .multilineTextAlignment(.leading)
@@ -68,13 +68,13 @@ struct BodyOneView: View {
             }
             VStack{
                 Spacer()
-                Button("Click here to look at an example of an introductory statement!") {isHidden.toggle()}
+                Button("Click here to look at an example of a Body 1 paragraph!") {isHidden.toggle()}
                     .font(.custom("Helvetica", size:25))
                 RoundedRectangle(cornerRadius: 25)
                     .inset(by: 3)
-                    .stroke(Color.black, lineWidth: 5)
+                    .stroke(Color.darkCyan, lineWidth: 5)
                     .frame(width: 800, height: 450)
-                    .overlay(Text("**TODO: Example of a well written introductory paragraph.**").font(.custom("Helvetica", size:25)).foregroundColor(.black).multilineTextAlignment(.center))
+                    .overlay(Text("**This is an example of a body 1 paragraph**").font(.custom("Helvetica", size:25)).foregroundColor(Color.darkCyan))
                     .ignoresSafeArea()
                     .opacity(isHidden ? 1: 0)
             }
