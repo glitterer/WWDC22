@@ -1,32 +1,52 @@
-//
-//  SwiftUIView.swift
-//  
-//
-//  Created by Seik Oh on 2022/04/23.
-//
-
 import SwiftUI
 
 struct EssayExampleView: View {
     var body: some View {
         ScrollView{
             VStack{
-                Text("Complete Sample Essay")
-                    .font(.custom("Helvetica", size:40))
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .padding()
-                    .cornerRadius(8)
+                ZStack{
+                    HStack{
+                        Image("wwdc-character-finEssay")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 200, height: 200)
+                            .padding(.trailing, 500.0)
+                    }
+                    Text("Sample Essay")
+                        .font(.custom("Helvetica", size:40))
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.black)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .padding()
+                        .cornerRadius(8)
+                    
+                    HStack{
+                        Image("wwdc-character-Yay")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 200, height: 200)
+                            .padding(.leading, 500.0)
+                    }
+                }
                 
                 ZStack{
-                    RoundedRectangle(cornerRadius: 25)
+                    Rectangle()
                         .inset(by: 3)
-                        .stroke(Color.lightGrey, lineWidth: 5)
+                        .stroke(Color.lightGrey, lineWidth: 3)
                         .frame(width: 980, height: 3700)
                         .padding()
                     VStack{
+                        Text("The Present Happiness")
+                            .font(.custom("Helvetica", size:30))
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.black)
+                            .multilineTextAlignment(.center)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                            .padding()
+                            .cornerRadius(8)
                         RoundedRectangle(cornerRadius: 25)
                             .inset(by: 3)
                             .stroke(Color.black, lineWidth: 5)

@@ -1,10 +1,3 @@
-//
-//  BodyOneView.swift
-//  EssayWriting
-//
-//  Created by Seik Oh on 2022/04/23.
-//
-
 import SwiftUI
 
 struct BodyOneView: View {
