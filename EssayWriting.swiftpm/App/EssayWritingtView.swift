@@ -26,7 +26,7 @@ struct EssayWritingtView: View {
                     .opacity(startAnimation ? 1: 0)
                 
                 if count <= 0 {
-                    Button("Press  0to Proceed"){
+                    Button("Press to Proceed"){
                         appState.hasOnboarded = true //change the state
                     }
                 }
