@@ -11,6 +11,7 @@ struct BodyThreeView: View {
     @State var isHidden = false
     
     var body: some View {
+        ScrollView{
         ZStack{
             VStack{
                 Text("Body3")
@@ -66,19 +67,20 @@ struct BodyThreeView: View {
                     }
                     Spacer()
                 }
+                VStack{
+                    Spacer()
+                    Button("Click here to look at an example of a body 3 paragraph!") {isHidden.toggle()}
+                        .font(.custom("Helvetica", size:25))
+                    RoundedRectangle(cornerRadius: 25)
+                        .inset(by: 3)
+                        .stroke(Color.mainGreen, lineWidth: 5)
+                        .frame(width: 800, height: 450)
+                        .overlay(Text("**This is an example of a body 3 paragraph**").font(.custom("Helvetica", size:25)).foregroundColor(Color.mainGreen))
+                        .ignoresSafeArea()
+                        .opacity(isHidden ? 1: 0)
+                }
             }
-            VStack{
-                Spacer()
-                Button("Click here to look at an example of a body 3 paragraph!") {isHidden.toggle()}
-                    .font(.custom("Helvetica", size:25))
-                RoundedRectangle(cornerRadius: 25)
-                    .inset(by: 3)
-                    .stroke(Color.mainGreen, lineWidth: 5)
-                    .frame(width: 800, height: 450)
-                    .overlay(Text("**This is an example of a body 3 paragraph**").font(.custom("Helvetica", size:25)).foregroundColor(Color.mainGreen))
-                    .ignoresSafeArea()
-                    .opacity(isHidden ? 1: 0)
-            }
+        }
         }
     }
 }

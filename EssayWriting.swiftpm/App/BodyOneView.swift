@@ -11,6 +11,7 @@ struct BodyOneView: View {
     @State var isHidden = false
     
     var body: some View {
+        ScrollView{
         ZStack{
             VStack{
                 Text("Body 1")
@@ -32,7 +33,7 @@ struct BodyOneView: View {
                 
                 VStack{
                     VStack{
-                        Text("The second, third, and fourth paragraph are your body. This is where your main points and their detail (i.e supporting) sentences are written. From here there is an option on how you would want to prioritize your main ideas. \n**Option 1**: Put your most important main idea in body 1, and least important in body 3. \n**Option 2**: Put your least important idea at body 1, and most important at body 3.\nIf you are a beginner of writing an essay, it is recommended to take **Option 1** as it is keeps the reader interested at the start of the essay, rather than having the reader stop from the start. **Therefore, this app will be explaining from Option 1's point of view.** \nHere are some tips on writing a body 1 paragraph.")
+                        Text("The second, third, and fourth paragraph are your body. This is where your main points and their detail (i.e supporting) sentences are written. From here there is an option on how you would want to prioritize your main ideas. \n\n**Option 1**: Put your most important main idea in body 1, and least important in body 3. \n**Option 2**: Put your least important idea at body 1, and most important at body 3.\n\nIf you are a beginner of writing an essay, it is recommended to take **Option 1** as it is keeps the reader interested at the start of the essay, rather than having the reader stop from the start. **Therefore, this app will be explaining from Option 1's point of view.** \nHere are some tips for writing a body 1 paragraph: ")
                             .font(.custom("Helvetica", size:25))
                             .foregroundColor(Color.black)
                             .multilineTextAlignment(.leading)
@@ -65,19 +66,20 @@ struct BodyOneView: View {
                     }
                     Spacer()
                 }
+                VStack{
+                    Spacer()
+                    Button("Click here to look at an example of a Body 1 paragraph!") {isHidden.toggle()}
+                        .font(.custom("Helvetica", size:25))
+                    RoundedRectangle(cornerRadius: 25)
+                        .inset(by: 3)
+                        .stroke(Color.darkCyan, lineWidth: 5)
+                        .frame(width: 800, height: 450)
+                        .overlay(Text("**This is an example of a body 1 paragraph**").font(.custom("Helvetica", size:25)).foregroundColor(Color.darkCyan))
+                        .ignoresSafeArea()
+                        .opacity(isHidden ? 1: 0)
+                }
             }
-            VStack{
-                Spacer()
-                Button("Click here to look at an example of a Body 1 paragraph!") {isHidden.toggle()}
-                    .font(.custom("Helvetica", size:25))
-                RoundedRectangle(cornerRadius: 25)
-                    .inset(by: 3)
-                    .stroke(Color.darkCyan, lineWidth: 5)
-                    .frame(width: 800, height: 450)
-                    .overlay(Text("**This is an example of a body 1 paragraph**").font(.custom("Helvetica", size:25)).foregroundColor(Color.darkCyan))
-                    .ignoresSafeArea()
-                    .opacity(isHidden ? 1: 0)
-            }
+        }
         }
     }
 }

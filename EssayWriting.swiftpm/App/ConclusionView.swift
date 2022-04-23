@@ -11,6 +11,7 @@ struct ConclusionView: View {
     @State var isHidden = false
     
     var body: some View {
+        ScrollView{
         ZStack{
             VStack{
                 Text("Conclusion")
@@ -65,19 +66,20 @@ struct ConclusionView: View {
                     }
                     Spacer()
                 }
+                VStack{
+                    Spacer()
+                    Button("Click here to look at an example of an concluding paragraph!") {isHidden.toggle()}
+                        .font(.custom("Helvetica", size:25))
+                    RoundedRectangle(cornerRadius: 25)
+                        .inset(by: 3)
+                        .stroke(Color.black, lineWidth: 5)
+                        .frame(width: 800, height: 450)
+                        .overlay(Text("**TODO: Example of a well written Concluding paragraph.**").font(.custom("Helvetica", size:25)).foregroundColor(.black).multilineTextAlignment(.center))
+                        .ignoresSafeArea()
+                        .opacity(isHidden ? 1: 0)
+                }
             }
-            VStack{
-                Spacer()
-                Button("Click here to look at an example of an concluding paragraph!") {isHidden.toggle()}
-                    .font(.custom("Helvetica", size:25))
-                RoundedRectangle(cornerRadius: 25)
-                    .inset(by: 3)
-                    .stroke(Color.black, lineWidth: 5)
-                    .frame(width: 800, height: 450)
-                    .overlay(Text("**TODO: Example of a well written Concluding paragraph.**").font(.custom("Helvetica", size:25)).foregroundColor(.black).multilineTextAlignment(.center))
-                    .ignoresSafeArea()
-                    .opacity(isHidden ? 1: 0)
-            }
+        }
         }
     }
 }
