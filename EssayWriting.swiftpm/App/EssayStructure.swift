@@ -140,7 +140,7 @@ struct EssayStructure: View {
                             }
                         }
                         NavigationLink(destination: EssayExampleView()) {
-                            Text("Finished Studying? \nNow Let's See the Whole Sample Essay!📄")
+                            Text("Finished Studying? \nNow Let's See the Whole Sample Essay! 📄")
                                 .font(.custom("Helvetica", size:25))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.blue)
@@ -150,8 +150,8 @@ struct EssayStructure: View {
                                 .background(Color.gray.opacity(0.25))
                                 .cornerRadius(8)
                         }
-                        NavigationLink(destination: TipsView()) {
-                            Text("Want to See More Tips?🤟")
+                        NavigationLink(destination: TipChecklistView()) {
+                            Text("A Tip-Checklist to Help You with Your Essay! 🤟")
                                 .font(.custom("Helvetica", size:25))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.blue)
