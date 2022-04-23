@@ -75,7 +75,7 @@ struct BodyTwoView: View {
                     .inset(by: 3)
                     .stroke(Color.charOrange, lineWidth: 5)
                     .frame(width: 800, height: 450)
-                    .overlay(Text("**This is an example of a body 1 paragraph**").font(.custom("Helvetica", size:25)).foregroundColor(Color.charOrange))
+                    .overlay(Text("**This is an example of a body 2 paragraph**").font(.custom("Helvetica", size:25)).foregroundColor(Color.charOrange))
                     .ignoresSafeArea()
                     .opacity(isHidden ? 1: 0)
             }
