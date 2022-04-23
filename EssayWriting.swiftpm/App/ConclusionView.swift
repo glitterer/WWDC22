@@ -73,8 +73,8 @@ struct ConclusionView: View {
                     RoundedRectangle(cornerRadius: 25)
                         .inset(by: 3)
                         .stroke(Color.black, lineWidth: 5)
-                        .frame(width: 800, height: 450)
-                        .overlay(Text("**TODO: Example of a well written Concluding paragraph.**").font(.custom("Helvetica", size:25)).foregroundColor(.black).multilineTextAlignment(.center))
+                        .frame(width: 800, height: 700)
+                        .overlay(Text("    In conclusion, the story conveys the message same to a phrase from the movie, Kung-Fu Panda, “That is why the present is called the present.” The author of “America” has used images to make the past very happy, which ironically strengthens the issue that in the present the protagonist is lost and unable to move forward. This is shown by the scene of the protagonist reminiscing about the past and going into a delusion of catching the fragrance of hope in finding his ideal happiness in the future. Like the Kung-Fu Panda, if one is stuck in the past, he is unable to see the present, and without being able to see the present, it is difficult to move forward. The only way Panda successfully masters martial arts is by understanding and accepting the present. This is not only applied to protagonists of movies and stories but also our real lives. Without being able to see the present, it is impossible to find happiness in the future. Therefore, it is important to explore the inner-happiness of the current time and space rather than seeking it in the past or the future.").font(.custom("Helvetica", size:25)).foregroundColor(.black).padding().lineSpacing(10).multilineTextAlignment(.leading))
                         .ignoresSafeArea()
                         .opacity(isHidden ? 1: 0)
                 }

@@ -75,7 +75,7 @@ struct IntroductionView: View {
                         .inset(by: 3)
                         .stroke(Color.black, lineWidth: 5)
                         .frame(width: 800, height: 450)
-                        .overlay(Text("**TODO: Example of a well written introductory paragraph.**").font(.custom("Helvetica", size:25)).foregroundColor(.black).multilineTextAlignment(.center))
+                        .overlay(Text("    In the movie Kung-Fu Panda, the main hero, Poe, trains to derive his potential in order to protect the future. However, he finds out that true potential, happiness, and meaning lie within the present. Finding something truly meaningful in life is always something the protagonists in movies or literature look for. It is also the moral of a 130-year-old essay written by Arthur Schnitzler. “America” is a story about the protagonist going to America and reminiscing about his past, wonderful memories that contrast from what he feels now from America. The story conveys a message that happiness should be found in the present through the author’s use of various devices of literature.").font(.custom("Helvetica", size:25)).foregroundColor(.black).padding().lineSpacing(10).multilineTextAlignment(.leading))
                         .ignoresSafeArea()
                         .opacity(isHidden ? 1: 0)
                 }

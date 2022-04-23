@@ -73,8 +73,8 @@ struct BodyOneView: View {
                     RoundedRectangle(cornerRadius: 25)
                         .inset(by: 3)
                         .stroke(Color.darkCyan, lineWidth: 5)
-                        .frame(width: 800, height: 450)
-                        .overlay(Text("**This is an example of a body 1 paragraph**").font(.custom("Helvetica", size:25)).foregroundColor(Color.darkCyan))
+                        .frame(width: 800, height: 800)
+                        .overlay(Text("    Firstly, various images are used to show a vivid contrast between his memories and the present. The author chooses words that are vivid, positive and bright in order to give a sense that the protagonist is finding happiness in the past. For example, “How funny it was then” (p. 157) shows the enjoyment, and “… so clearly do I see it that it seems as if I had left it yesterday…” (p. 156) shows vividness of the past. In addition, the phrase “…how the fragrance intoxicated me…” (p. 157) shows how much the protagonist longs for his past memories and how intensely he finds the happiness from the past. In contrast, the present shows very vague, dim, and negative imagery words such as “gray autumn morning” (p. 156),  “large, cold city,” or “A pain, a madness comes over me … irrevocably been lost” (p. 157). The two images are like an antithesis to each other, and therefore the readers are able to understand that the protagonist feels at a great loss and in pain because he is unable to find the same feeling of happiness from the present which he felt in the past. The importance of contrasting imagery is that creates a vivid image of the setting; therefore, an analysis of the time and space is inevitable.").font(.custom("Helvetica", size:25)).foregroundColor(.black).padding().lineSpacing(10).multilineTextAlignment(.leading))
                         .ignoresSafeArea()
                         .opacity(isHidden ? 1: 0)
                 }

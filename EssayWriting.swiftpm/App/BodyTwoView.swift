@@ -74,8 +74,8 @@ struct BodyTwoView: View {
                     RoundedRectangle(cornerRadius: 25)
                         .inset(by: 3)
                         .stroke(Color.charOrange, lineWidth: 5)
-                        .frame(width: 800, height: 450)
-                        .overlay(Text("**This is an example of a body 2 paragraph**").font(.custom("Helvetica", size:25)).foregroundColor(Color.charOrange))
+                        .frame(width: 800, height: 800)
+                        .overlay(Text("    The setting is vividly shown from the descriptions of images that there is a strong contrast between the current situation and the memories of the man. Regarding time, the author does not write much about it apart from the fact that the man is looking at his past memories even though he is in the “new world” (p. 156). However, the author describes a lot relating to space. The past has two spaces which are the “little room” and the “theater café.” Through a historical approach, it can be interpreted that both spaces symbolize the homeland of the man, or if one is to expand the meaning, the homeland of the immigrants. The 19th century was a period of mass immigration because of the American Dream, which later on is suggested to be a false dream, closer to an illusion. Therefore, with the contrast of the two spaces in the past and the present, it can be interpreted as the contrast of the homeland and the illusion of America. The author is saying that one should find their meaning of life from their certain place and time, not from a setting that has already passed or something that might come in the future. However, it is important to notice that the setting from “America” all comes from a single character’s point of view and thus, it is important to analyze in detail of who this character is.").font(.custom("Helvetica", size:25)).foregroundColor(.black).padding().lineSpacing(10).multilineTextAlignment(.leading))
                         .ignoresSafeArea()
                         .opacity(isHidden ? 1: 0)
                 }

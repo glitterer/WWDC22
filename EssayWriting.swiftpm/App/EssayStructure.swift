@@ -9,23 +9,31 @@ struct EssayStructure: View {
         NavigationView {
             ZStack {
                 ScrollView{
-                    VStack{
-                        Text("A Five-paragraph Essay")
-                            .font(.custom("Helvetica", size:40))
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.black)
-                            .multilineTextAlignment(.center)
-                            .frame(maxWidth: .infinity, alignment: .center)
-                            .padding()
-                        //.background(Color.gray.opacity(0.25))
-                            .cornerRadius(8)
-                        Text("When it comes to writing an essay for an academic purpose, the most basic structure is the **'Five-Paragraph Essay'**.\n\nWhile some may find this to be a simple process, others may find this difficult in understanding and building strong fundamentals. Whatever the case might be, the important fact is that knowing the **five-paragraph essay** is an important process in the beginning of writing.\n\nThe Body consists of three basic parts: **introduction, body,** and **conclusion**.\nTo learn deeply on each parts, select the part you are interested in from below!")
-                            .font(.custom("Helvetica", size:25))
-                            .foregroundColor(.black)
-                            .multilineTextAlignment(.leading)
-                            .lineSpacing(10)
-                            .padding()
-                        Spacer()
+                    Text("A Five-paragraph Essay")
+                        .font(.custom("Helvetica", size:40))
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.black)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .padding()
+                    //.background(Color.gray.opacity(0.25))
+                        .cornerRadius(8)
+                    HStack{
+                        Image("wwdc-character-fiveP")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 300, height: 300)
+                        
+                        VStack{
+                            Text("When it comes to writing an essay for an academic purpose, the most basic structure is the **'Five-Paragraph Essay'**.\n\nWhile some may find this to be a simple process, others may find this difficult in understanding and building strong fundamentals. Whatever the case might be, the important fact is that knowing the **five-paragraph essay** is an important process in the beginning of writing.\n\nThe Body consists of three basic parts: **introduction, body,** and **conclusion**.\nTo learn deeply on each parts, select the part you are interested in from below!")
+                                .font(.custom("Helvetica", size:25))
+                                .foregroundColor(.black)
+                                .multilineTextAlignment(.leading)
+                                .lineSpacing(10)
+                                .padding()
+                            Spacer()
+                        }
                     }
                     .padding()
                     .ignoresSafeArea()
