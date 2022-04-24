@@ -8,15 +8,15 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "EssayWritings",
+    name: "EssayWriting",
     platforms: [
         .iOS("15.2")
     ],
     products: [
         .iOSApplication(
-            name: "EssayWritings",
+            name: "EssayWriting",
             targets: ["AppModule"],
-            bundleIdentifier: "dev.OZ.EssayWritings",
+            bundleIdentifier: "dev.OZ.EssayWriting",
             teamIdentifier: "5F9657NRX4",
             displayVersion: "1.0",
             bundleVersion: "1",
@@ -37,10 +37,7 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "AppModule",
-            path: ".",
-            resources: [
-                .process("Resources")
-            ]
+            path: "."
         )
     ]
 )
